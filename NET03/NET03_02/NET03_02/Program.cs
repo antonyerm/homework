@@ -18,7 +18,35 @@ namespace NET03_02_01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Homework NET03, 02 Task. Problem 1. Matrix sorting with delegates.\n");
+
+            // Generate the source array
+            var array = new int[3, 3];
+            var rnd = new Random();
+            var drawer = new Drawer();
+
+            // fill the array
+            for (int y = 0; y <= array.GetUpperBound(0); y++)
+            {
+                for (int x = 0; x <= array.GetUpperBound(1); x++)
+                {
+                    array[y, x] = rnd.Next(0, 100);
+                }
+            }
+
+            Console.WriteLine("The original matrix:");
+            drawer.DrawMatrix(array);
+
+            var sortObject = new Sort();
+
+            // Perform all kinds of sorting
+            foreach (var sortBy in Enum.GetValues(typeof(SortCriteria)))
+            {
+                var sortedArray = sortObject.SortMatrix(array, (SortCriteria)sortBy);
+                Console.WriteLine("Type of sorting: {0}. The sorted matrix:",
+                    Enum.GetName(typeof(SortCriteria), sortBy));
+                drawer.DrawMatrix(sortedArray);
+            }
         }
     }
 }
