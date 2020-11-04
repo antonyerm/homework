@@ -7,9 +7,9 @@
 //understand DRY(Don’t Repeat Yourself), SoC(Separation of Concerns principles), Low Coupling principles;
 //write agile extensible testable code;
 //understand standard event delegate pattern.
-
-// Task 1
-// Refactor of class methods (Izh - 06.Methods in details) using delegates (the API 's of the class should not change). 
+// Add to the class (Izh - 05.Creating types in C#) new methods with custom delegate, allowing to sorting both in 
+// ascending and descending, depending on comparison criterion of the matrix rows. Develop unit-tests using various 
+// comparison criterion of the matrix rows. 
 
 namespace NET03_02_01
 {
@@ -18,7 +18,7 @@ namespace NET03_02_01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Homework NET03, 02 Task. Problem 1. Matrix sorting with delegates.\n");
+            Console.WriteLine("Homework NET03, 02 Task. Problem 2. Matrix sorting with delegates.\n");
 
             // Generate the source array
             var array = new int[3, 3];

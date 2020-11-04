@@ -238,16 +238,34 @@
             return value;
         }
 
+        /// <summary>
+        /// Computes sum of the row elements.
+        /// </summary>
+        /// <param name="input">Input array.</param>
+        /// <param name="rowNumber">Number of the row.</param>
+        /// <returns></returns>
         private int GetRowValueRowSumReverse(int[,] input, int rowNumber)
         {
             return GetRowValueRowSum(input, rowNumber);
         }
 
+        /// <summary>
+        /// Computes max of the row elements.
+        /// </summary>
+        /// <param name="input">Input array.</param>
+        /// <param name="rowNumber">Number of the row.</param>
+        /// <returns></returns>
         private int GetRowValueRowMaxReverse(int[,] input, int rowNumber)
         {
             return GetRowValueRowMax(input, rowNumber);
         }
 
+        /// <summary>
+        /// Computes min of the row elements.
+        /// </summary>
+        /// <param name="input">Input array.</param>
+        /// <param name="rowNumber">Number of the row.</param>
+        /// <returns></returns>
         private int GetRowValueRowMinReverse(int[,] input, int rowNumber)
         {
             return GetRowValueRowMin(input, rowNumber);
