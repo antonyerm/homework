@@ -14,8 +14,15 @@
 namespace NET03_02_01
 {
     using System;
+    /// <summary>
+    /// Entry class of the program.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Entry method of the program.
+        /// </summary>
+        /// <param name="args">Not used.</param>
         static void Main(string[] args)
         {
             Console.WriteLine("Homework NET03, 02 Task. Problem 2. Matrix sorting with delegates.\n");

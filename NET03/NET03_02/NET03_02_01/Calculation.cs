@@ -82,6 +82,10 @@
             return gcdByStein((u - v) >> 1, v);
         }
 
+        /// <summary>
+        /// Sets the current algorithm for GCD calculations.
+        /// </summary>
+        /// <param name="algorithm">Type of algorithm.</param>
         internal void SetAlgorithm(TypeOfAlgorithm algorithm)
         {
             switch (algorithm)
