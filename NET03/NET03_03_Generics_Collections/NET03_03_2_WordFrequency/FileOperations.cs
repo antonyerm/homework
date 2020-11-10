@@ -6,33 +6,32 @@ using System.Text.RegularExpressions;
 
 namespace NET03_03_2_WordFrequency
 {
+    /// <summary>
+    /// Manages file operations.
+    /// </summary>
     public class FileOperations
     {
         private String filename = String.Empty;
-        private int nWords = 0;
-        private String pattern = @"\b\w+\b";
+        private String txt = String.Empty;
 
-        public WordCount(string filename)
+        /// <summary>
+        /// Creates a new instance of <see cref="FileOperations"/>. Opens the specified
+        /// file and loads its content to <see cref="txt"/> field.
+        /// </summary>
+        /// <param name="filename">Name of the file to open.</param>
+        public FileOperations(string filename)
         {
             if (!File.Exists(filename))
                 throw new FileNotFoundException("The file does not exist.");
 
             this.filename = filename;
-            string txt = String.Empty;
             using (StreamReader sr = new StreamReader(filename))
             {
-                txt = sr.ReadToEnd();
+                this.txt = sr.ReadToEnd();
             }
-            nWords = Regex.Matches(txt, pattern).Count;
         }
 
-        public string FullName
-        { get { return filename; } }
-
-        public string Name
-        { get { return Path.GetFileName(filename); } }
-
-        public int Count
-        { get { return nWords; } }
+        public string Text
+        { get { return this.txt; } }
     }
 }
