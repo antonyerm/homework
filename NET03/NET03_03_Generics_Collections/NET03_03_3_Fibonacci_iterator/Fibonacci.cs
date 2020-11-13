@@ -1,12 +1,14 @@
 ﻿// Task 3
 // Implement a method for the counting of the Fibonacci's numbers of the Fibonacci using the iterator block yield. Develop unit-tests.
 
-using Microsoft.VisualBasic.CompilerServices;
-using System.Collections;
-using System.Collections.Generic;
+
 
 namespace NET03_03_3_Fibonacci_iterator
 {
+    using Microsoft.VisualBasic.CompilerServices;
+    using System.Collections;
+    using System.Collections.Generic;
+
     internal class Fibonacci : IEnumerable<int>
     {
        

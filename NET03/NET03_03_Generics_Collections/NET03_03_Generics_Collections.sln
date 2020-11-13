@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET03_03_1_BinarySearch_Tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET03_03_2_WordFrequency", "NET03_03_2_WordFrequency\NET03_03_2_WordFrequency.csproj", "{36F5966B-494F-4903-A88F-5F6108425246}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET03_03_3_Fibonacci_iterator", "NET03_03_3_Fibonacci_iterator\NET03_03_3_Fibonacci_iterator.csproj", "{D3773B1B-85DA-4599-930C-69C77DBB68DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET03_03_3_Fibonacci_iterator", "NET03_03_3_Fibonacci_iterator\NET03_03_3_Fibonacci_iterator.csproj", "{D3773B1B-85DA-4599-930C-69C77DBB68DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET03_03_4_Queue", "NET03_03_4_Queue\NET03_03_4_Queue.csproj", "{9CABB93D-454D-4246-BFC3-CFB8C9DC2830}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D3773B1B-85DA-4599-930C-69C77DBB68DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3773B1B-85DA-4599-930C-69C77DBB68DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3773B1B-85DA-4599-930C-69C77DBB68DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CABB93D-454D-4246-BFC3-CFB8C9DC2830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CABB93D-454D-4246-BFC3-CFB8C9DC2830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CABB93D-454D-4246-BFC3-CFB8C9DC2830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CABB93D-454D-4246-BFC3-CFB8C9DC2830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

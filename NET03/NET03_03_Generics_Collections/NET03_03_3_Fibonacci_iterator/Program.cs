@@ -11,7 +11,7 @@ namespace NET03_03_3_Fibonacci_iterator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Homework NET03, Task 03. Problem 2. Fibonacci using the iterator.\n");
+            Console.WriteLine("Homework NET03, Task 03. Problem 3. Fibonacci using the iterator.\n");
 
             var fibonacciNumbers = new Fibonacci();
             var fibonacciEnumerator = (fibonacciNumbers as IEnumerable<int>).GetEnumerator();
