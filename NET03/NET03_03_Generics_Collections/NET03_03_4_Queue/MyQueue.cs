@@ -12,6 +12,8 @@ namespace NET03_03_4_Queue
     {
         private List<T> list = new List<T>();
 
+        public T this[int index] => this.list[index];
+
         public int Count => list.Count;
 
         public T Dequeue()

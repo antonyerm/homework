@@ -12,5 +12,7 @@ namespace NET03_03_4_Queue
         T Peek();
 
         int Count { get; }
+
+        T this[int index] { get; }
     }
 }

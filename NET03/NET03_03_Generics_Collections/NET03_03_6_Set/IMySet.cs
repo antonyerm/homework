@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NET03_03_5_Stack
+namespace NET03_03_6_Set
 {
-    interface IMyStack<T>
+    interface IMySet<T>
     {
-        void Push(T obj);
-        T Pop();
-
-        T Peek();
+        bool Add(T item);
+        bool Remove(T item);
 
         int Count { get; }
 

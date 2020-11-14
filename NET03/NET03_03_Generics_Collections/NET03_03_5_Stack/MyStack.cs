@@ -8,7 +8,9 @@
     {
         private List<T> list = new List<T>();
 
-        public int Count => list.Count;
+        public int Count => this.list.Count;
+
+        public T this[int index] => this.list[index];
 
         public T Pop()
         {

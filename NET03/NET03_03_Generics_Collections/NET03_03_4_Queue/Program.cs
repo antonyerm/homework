@@ -21,6 +21,13 @@ namespace NET03_03_4_Queue
                 Console.WriteLine();
             }
 
+            Console.WriteLine("Collection traverse using indexer:");
+            for (int i = 0; i < myQueue.Count; i++)
+            {
+                Console.Write(myQueue[i] + " ");
+            }
+            Console.WriteLine("\n");
+
             Console.WriteLine("Dequeue one by one:");
             while (myQueue.Count > 0)
             {

@@ -11,7 +11,7 @@ namespace NET03_03_5_Stack
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Homework NET03, Task 03. Problem 4. Generic Stack.\n");
+            Console.WriteLine("Homework NET03, Task 03. Problem 5. Generic Stack.\n");
             var myStack = new MyStack<string>();
             var inputValues = new string[] { "This", "is", "an", "example" };
 
@@ -22,6 +22,13 @@ namespace NET03_03_5_Stack
                 PrintMyQueueWithForeach(myStack);
                 Console.WriteLine();
             }
+
+            Console.WriteLine("Collection traverse using indexer:");
+            for (int i = 0; i < myStack.Count; i++)
+            {
+                Console.Write(myStack[i] + " ");
+            }
+            Console.WriteLine("\n");
 
             Console.WriteLine("Pop one by one:");
             while (myStack.Count > 0)
@@ -34,7 +41,7 @@ namespace NET03_03_5_Stack
 
         private static void PrintMyQueueWithForeach<T>(MyStack<T> collection)
         {
-            Console.Write("Current queue: ");
+            Console.Write("Current stack: ");
             foreach (var item in collection)
             {
                 Console.Write($"{item} ");
