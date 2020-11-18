@@ -19,7 +19,7 @@ namespace NET03_03_5_Stack
             foreach (var inputObject in inputValues)
             {
                 myStack.Push(inputObject);
-                PrintMyQueueWithForeach(myStack);
+                PrintMyStackWithForeach(myStack);
                 Console.WriteLine();
             }
 
@@ -33,13 +33,13 @@ namespace NET03_03_5_Stack
             Console.WriteLine("Pop one by one:");
             while (myStack.Count > 0)
             {
-                PrintMyQueueWithForeach(myStack);
+                PrintMyStackWithForeach(myStack);
                 myStack.Pop();
                 Console.WriteLine();
             }
         }
 
-        private static void PrintMyQueueWithForeach<T>(MyStack<T> collection)
+        private static void PrintMyStackWithForeach<T>(MyStack<T> collection)
         {
             Console.Write("Current stack: ");
             foreach (var item in collection)
